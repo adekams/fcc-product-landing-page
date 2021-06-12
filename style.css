@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #f1c40f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+body {
+    background: #eee;
+    font-family: sans-serif;
+}
+
+ul li {
+    font-size: 18px;
+    list-style: none;
+    margin: 16px auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+header {
+    background: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#intro {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+#header.flex {
+    flex-wrap: wrap;
+}
+
+#header .hero-img,
+#header nav {
+    width: 90%;
+    text-align: center;
+}
+
+form input {
+    display: block;
+    margin: 16px auto;
+    padding: 8px;
+    width: 280px;
+}
+
+input[type=submit] {
+    background: var(--primary-color);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: 900;
+    width: fit-content;
+}
+
+#features .flex{
+    margin: 20px auto;
+    padding: 0 40px;
+    gap: 10px;
+}
+
+#features i {
+    color: darkorange;
+    display: none;
+}
+
+#features .description h3, h2 {
+    font-size: 24px;
+}
+
+#how_it_works {
+    text-align: center;
+}
+
+#how_it_works video {
+    width: 90%;
+    margin: auto;
+}
+
+#pricing .flex {
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin: 20px auto;
+    text-align: center;
+    width: 300px;
+}
+
+.card-title {
+    background: #ddd;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-price {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 16px auto 6px;
+}
+
+.card p {
+    line-height: 1.9;
+    font-size: 20px;
+}
+
+.card-btn {
+    background: var(--primary-color);
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: 800;
+    margin: 16px 0;
+}
+
+.footer .container {
+    background: #ddd;
+    
+    padding: 15px;
+    text-align: right;
+    width: 100%;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 552px){
+    .card {
+        width: 60%;
+    }
+
+    form input {
+        width: 400px;
+    }
+
+    #features i {
+        display: inline;
+    }
+   
+    #features .description {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #header.flex {
+        justify-content: space-between;
+    }
+
+    #header .hero-img {
+        width: 400px;
+    }
+        
+
+    #header nav {
+        width: fit-content;
+        justify-items: flex-end;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    
+
+    section {
+        padding: 20px 0;
+    }
+
+    #how_it_works video {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    .card {
+        width: 30%;
+    }
+}
