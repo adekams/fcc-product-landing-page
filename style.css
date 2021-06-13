@@ -45,12 +45,9 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 0;
+    z-index: 1;
 }
 
-#intro {
-    text-align: center;
-    padding-top: 100px;
-}
 
 .container {
     max-width: 1200px;
@@ -74,11 +71,17 @@ header {
     text-align: center;
 }
 
+#intro {
+    text-align: center;
+    padding-top: 240px;
+}
+
 form input {
     display: block;
     margin: 16px auto;
     padding: 8px;
     width: 280px;
+    max-width: 100%;
 }
 
 input[type=submit] {
@@ -91,7 +94,6 @@ input[type=submit] {
 
 #features .flex{
     margin: 20px auto;
-    padding: 0 40px;
     gap: 10px;
 }
 
@@ -100,7 +102,8 @@ input[type=submit] {
     display: none;
 }
 
-#features .description h3, h2 {
+#features .description h3,
+h2 {
     font-size: 24px;
 }
 
@@ -108,8 +111,8 @@ input[type=submit] {
     text-align: center;
 }
 
-#how_it_works video {
-    width: 90%;
+#how_it_works #video {
+    max-width: 100%;
     margin: auto;
 }
 
@@ -129,7 +132,7 @@ input[type=submit] {
     background: #ddd;
     padding: 16px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .card-price {
@@ -173,6 +176,10 @@ footer nav {
         width: 400px;
     }
 
+    #features .flex {
+        padding: 0 40px;
+    }
+
     #features i {
         display: inline;
     }
@@ -199,22 +206,28 @@ footer nav {
 
     ul li {
         display: inline-block;
-        margin: 0 10px;
-    }
+        margin: 0 20px;
+    } 
 
-    
+    #intro {
+        padding-top: 100px;
+    }
 
     section {
         padding: 20px 0;
     }
 
-    #how_it_works video {
+    #how_it_works #video {
         width: 500px;
+        height: 300px;
     }
 }
 
 @media screen and (min-width: 800px){
-
+    ul li {
+        margin: 0 25px;
+    } 
+    
     .card {
         width: 30%;
     }
